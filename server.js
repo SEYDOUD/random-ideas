@@ -18,9 +18,9 @@ app.use(express.urlencoded({ extended:false }))
 
 // cors middleware
 app.use(cors({
-    origin: ['http://localhost:5000' , 'http://localhost:3000'],
+    origin: 'http://localhost:3000',
     credentials: true
-}))
+}));
 
 app.get('/' , (req , res) => {
     res.send({message: 'Welcome to the RandomIdeas API' })
@@ -29,4 +29,4 @@ app.get('/' , (req , res) => {
 const ideasRouter = require("./routes/ideas")
 app.use('/api/ideas' , ideasRouter)
 
-app.listen(port , () => console.log(`Server Lintening on port`))
+app.listen(port , () => console.log(`Server Lintening on ${port}`))
