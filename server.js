@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended:false }))
 
 // cors middleware
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://random-ideas-2elk.onrender.com',
     credentials: true
 }));
 

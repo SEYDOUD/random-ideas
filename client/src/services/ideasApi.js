@@ -2,7 +2,7 @@ import axios from 'axios'
 
 class IdeasApi{
     constructor(){
-        this._apiUrl = '/api/ideas'
+        this._apiUrl = 'https://random-ideas-2elk.onrender.com/api/ideas'
     }
 
 
